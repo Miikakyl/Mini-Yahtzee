@@ -52,7 +52,7 @@ const Gameboard = ({ navigation, route }) => {
 
   useEffect(() => {
     countTotalPoints()
-
+    var hasAllPointsSelected
     hasAllPointsSelected = selectedDicePoints.every((value) => value === true)
     if (hasAllPointsSelected) {
       setGameEndStatus(true)
